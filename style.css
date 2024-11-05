@@ -12,14 +12,13 @@
 
 body {
   display: flex;
-  flex-direction: column; /* Ubah arah tampilan menjadi kolom */
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
-  padding: 20px 0; /* Kurangi padding untuk menempatkan elemen lebih ke atas */
+  padding: 50px 0px;
 }
 
 .night {
@@ -32,11 +31,9 @@ body {
   filter: blur(0.1vmin);
 }
 
-/* Atur posisi bunga */
 .flowers {
   position: relative;
   transform: scale(0.9);
-  margin-bottom: 10px; /* Tambahkan margin bawah agar ada ruang untuk teks */
 }
 
 .flower {
@@ -988,21 +985,21 @@ body {
   animation-play-state: paused !important;
 }
 
-/* Overlay transparan di bawah bunga */
+/* Overlay transparan di bagian bawah */
 .overlay {
-  position: relative;
+  position: fixed;
+  bottom: 5%; /* Naikkan posisi overlay 10% dari bawah */
   width: 100%;
   background: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
   text-align: center;
-  padding: 15px 0;
+  padding: 15px 0; /* Kurangi padding agar lebih kompak */
   z-index: 100;
-  margin-top: 20px; /* Beri jarak antara bunga dan teks */
 }
 
 /* Gaya teks untuk pesan penyemangat */
 .overlay-text {
   color: #ffffff; /* Warna putih untuk kontras */
-  font-size: 20px;
+  font-size: 20px; /* Sedikit perkecil ukuran teks agar lebih responsif */
   font-weight: bold;
   margin: 0;
 }
