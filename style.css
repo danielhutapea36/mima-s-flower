@@ -985,19 +985,21 @@ body {
   animation-play-state: paused !important;
 }
 
+/* Overlay transparan di bagian bawah */
 .overlay {
   position: fixed;
-  bottom: 0;
+  bottom: 10%; /* Naikkan posisi overlay 10% dari bawah */
   width: 100%;
   background: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0; /* Kurangi padding agar lebih kompak */
   z-index: 100;
 }
 
+/* Gaya teks untuk pesan penyemangat */
 .overlay-text {
   color: #ffffff; /* Warna putih untuk kontras */
-  font-size: 24px;
+  font-size: 20px; /* Sedikit perkecil ukuran teks agar lebih responsif */
   font-weight: bold;
   margin: 0;
 }
