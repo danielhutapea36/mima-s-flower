@@ -36,6 +36,7 @@ body {
   transform: scale(0.9);
 }
 
+
 .flower {
   position: absolute;
   bottom: 10vmin;
@@ -981,6 +982,7 @@ body {
     transform: scale(0);
   }
 }
+
 .not-loaded * {
   animation-play-state: paused !important;
 }
@@ -988,18 +990,18 @@ body {
 /* Overlay transparan di bagian bawah */
 .overlay {
   position: fixed;
-  bottom: 10%; /* Naikkan posisi overlay 10% dari bawah */
+  bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
   text-align: center;
-  padding: 15px 0; /* Kurangi padding agar lebih kompak */
+  padding: 20px 0;
   z-index: 100;
 }
 
 /* Gaya teks untuk pesan penyemangat */
 .overlay-text {
   color: #ffffff; /* Warna putih untuk kontras */
-  font-size: 20px; /* Sedikit perkecil ukuran teks agar lebih responsif */
+  font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
