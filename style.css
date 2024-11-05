@@ -988,7 +988,7 @@ body {
 /* Overlay transparan di bagian bawah */
 .overlay {
   position: fixed;
-  bottom: 0%; /* Naikkan posisi overlay 10% dari bawah */
+  bottom: 2%; /* Naikkan posisi overlay 10% dari bawah */
   width: 100%;
   background: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
   text-align: center;
